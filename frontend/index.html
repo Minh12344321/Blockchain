@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Network</h1>
+        
+        <div class="buttons">
+            <button onclick="mineBlock()">Mine Block</button>
+            <button onclick="viewChain()">View Blockchain</button>
+        </div>
+        
+        <h2>Add Transaction</h2>
+        <input type="text" id="sender" placeholder="Sender">
+        <input type="text" id="receiver" placeholder="Receiver">
+        <input type="number" id="amount" placeholder="Amount">
+        <button onclick="addTransaction()">Send Transaction</button>
+        
+        <h2>Blockchain Data</h2>
+        <pre id="output"></pre>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
